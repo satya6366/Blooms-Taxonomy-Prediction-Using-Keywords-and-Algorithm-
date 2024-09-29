@@ -1,0 +1,593 @@
+text,label,semester
+define an algorithm,1,1
+describe the concept of data structures,1,1
+find the maximum value in an array,1,1
+how does a binary search tree work?,1,1
+list the basic data types in c,1,1
+name the types of software testing,1,1
+what is a pointer?,1,1
+where is memory allocation used?,1,1
+which sorting algorithm is the fastest?,1,1
+why is recursion important?,1,1
+draw a flowchart for bubble sort,1,1
+write a program to add two numbers,1,1
+compare different sorting algorithms,2,1
+demonstrate the use of linked lists,2,1
+discuss the advantages of arrays,2,1
+distinguish between a stack and a queue,2,1
+explain the concept of a binary tree,2,1
+illustrate the quicksort algorithm,2,1
+outline the steps of the insertion sort algorithm,2,1
+show how to implement a queue,2,1
+summarize the process of memory allocation,2,1
+compute the time complexity of merge sort,3,1
+develop a program to implement a stack,3,1
+analyze the performance of different sorting algorithms,3,1
+identify the key features of object-oriented programming,3,1
+make use of recursion to solve problems,3,1
+select the appropriate data structure for a given problem,3,1
+solve the problem of finding the shortest path in a graph,3,1
+utilize pointers in a c program,3,1
+draw the structure of a binary search tree,3,1
+illustrate the concept of dynamic memory allocation,3,1
+classify different types of databases,4,1
+characterize the properties of a binary tree,4,1
+categorize different types of sorting algorithms,4,1
+compare the features of a stack and a queue,4,1
+derive the time complexity of quicksort,4,1
+distinguish between static and dynamic memory allocation,4,1
+examine the principles of software engineering,4,1
+inference the use of different data structures in real-world applications,4,1
+organize the different phases of the software development life cycle,4,1
+simplify the process of dynamic memory allocation,4,1
+test for the correctness of a sorting algorithm,4,1
+identify the key components of a computer system,4,1
+investigate the different types of databases,4,1
+assess the efficiency of different sorting algorithms,5,1
+choose the best data structure for a given problem,5,1
+compare the performance of various algorithms,5,1
+decide on the most appropriate programming language for a project,5,1
+determine the time complexity of a given algorithm,5,1
+estimate the memory requirements for a program,5,1
+evaluate the effectiveness of a software testing strategy,5,1
+explain the trade-offs between different types of databases,5,1
+interpret the results of a performance analysis,5,1
+justify the use of a particular data structure,5,1
+measure the efficiency of different algorithms,5,1
+prioritize the tasks in a software development project,5,1
+prove the correctness of an algorithm,5,1
+rate the usability of different programming languages,5,1
+recommend an optimization strategy for a program,5,1
+build a simple compiler,6,1
+compose a program to manage a library system,6,1
+construct a binary search tree,6,1
+create a new sorting algorithm,6,1
+design a database schema for an e-commerce website,6,1
+develop a software application,6,1
+discuss the design of a new operating system,6,1
+elaborate on the implementation of a linked list,6,1
+estimate the effort required to complete a software project,6,1
+formulate a new algorithm for data compression,6,1
+improve the performance of an existing algorithm,6,1
+maximize the efficiency of a program,6,1
+modify an existing data structure to improve performance,6,1
+predict the outcome of a change in an algorithm,6,1
+invent a new data structure,6,1
+define the concept of operating systems,1,2
+describe the functions of an operating system,1,2
+find the role of a cpu in a computer system,1,2
+"how does virtual memory work?,",1,2
+list the types of operating systems,1,2
+name the scheduling algorithms used in operating systems,1,2
+"what is a process?,",1,2
+"where is paging used?,",1,2
+which operating system is most widely used?,1,2
+"why is deadlock a problem?,",1,2
+draw the process state diagram,1,2
+write a shell script,1,2
+compare different cpu scheduling algorithms,2,2
+demonstrate the concept of process synchronization,2,2
+discuss the advantages of using virtual memory,2,2
+distinguish between paging and segmentation,2,2
+explain the concept of deadlock,2,2
+illustrate the working of a round-robin scheduling algorithm,2,2
+outline the steps of the process creation,2,2
+show how to manage memory using paging,2,2
+summarize the benefits of multi-threading,2,2
+compute the turnaround time of a scheduling algorithm,3,2
+develop a program to implement the round-robin scheduling,3,2
+analyze the performance of different memory management techniques,3,2
+identify the key features of a distributed operating system,3,2
+make use of semaphores for process synchronization,3,2
+select an appropriate scheduling algorithm for a given scenario,3,2
+solve the problem of deadlock detection,3,2
+utilize virtual memory in a program,3,2
+draw the memory layout of a process,3,2
+illustrate the concept of multi-threading,3,2
+classify different types of file systems,4,2
+characterize the features of a real-time operating system,4,2
+categorize different memory management techniques,4,2
+compare the features of different operating systems,4,2
+derive the response time of a scheduling algorithm,4,2
+distinguish between hard and soft real-time systems,4,2
+examine the principles of process management,4,2
+inference the use of different scheduling algorithms in real-world applications,4,2
+organize the different components of an operating system,4,2
+simplify the process of process synchronization,4,2
+test for the occurrence of deadlock,4,2
+identify the key features of a network operating system,4,2
+investigate the different types of file systems,4,2
+assess the performance of different scheduling algorithms,5,2
+choose the best memory management technique for a given scenario,5,2
+compare the performance of various operating systems,5,2
+decide on the most appropriate file system for a project,5,2
+determine the efficiency of a given scheduling algorithm,5,2
+estimate the memory requirements for an operating system,5,2
+evaluate the effectiveness of process synchronization techniques,5,2
+explain the trade-offs between different memory management techniques,5,2
+interpret the results of a scheduling algorithm analysis,5,2
+justify the use of a particular scheduling algorithm,5,2
+measure the performance of different operating systems,5,2
+prioritize the tasks in an operating system design project,5,2
+prove the correctness of a process synchronization technique,5,2
+rate the usability of different file systems,5,2
+recommend an optimization strategy for an operating system,5,2
+build a custom operating system,6,2
+compose a program to manage processes,6,2
+construct a new file system,6,2
+create a new scheduling algorithm,6,2
+design a memory management module for an operating system,6,2
+develop a multi-threaded application,6,2
+discuss the design of a distributed operating system,6,2
+elaborate on the implementation of a file system,6,2
+estimate the effort required to complete an operating system project,6,2
+formulate a new algorithm for deadlock detection,6,2
+improve the performance of an existing scheduling algorithm,6,2
+maximize the efficiency of a memory management technique,6,2
+modify an existing operating system to improve performance,6,2
+predict the outcome of a change in a scheduling algorithm,6,2
+invent a new memory management technique,6,2
+define the concept of database systems,1,3
+describe the functions of a database management system,1,3
+find the role of a dbms in a computer system,1,3
+"how does a relational database work?,",1,3
+list the types of databases,1,3
+name the normalization forms used in database design,1,3
+"what is a primary key?,",1,3
+"where is sql used?,",1,3
+"which database model is most widely used?,",1,3
+"why is indexing important?,",1,3
+draw an er diagram,1,3
+write an sql query to retrieve data,1,3
+compare different database models,2,3
+demonstrate the concept of normalization,2,3
+discuss the advantages of using a relational database,2,3
+distinguish between a primary key and a foreign key,2,3
+explain the concept of a join operation,2,3
+illustrate the use of sql in database management,2,3
+outline the steps of database design,2,3
+show how to create a table in sql,2,3
+summarize the process of database normalization,2,3
+compute the result of a join operation,3,3
+develop a database schema for an e-commerce website,3,3
+analyze the performance of different indexing techniques,3,3
+identify the key features of a nosql database,3,3
+make use of sql to manage a database,3,3
+select an appropriate database model for a given scenario,3,3
+solve the problem of database redundancy,3,3
+utilize indexing to improve database performance,3,3
+draw an er diagram for a university database,3,3
+illustrate the concept of a transaction in a dbms,3,3
+classify different types of databases,4,3
+characterize the properties of a relational database,4,3
+categorize different normalization forms,4,3
+compare the features of different database models,4,3
+derive the result of a complex sql query,4,3
+distinguish between sql and nosql databases,4,3
+examine the principles of database management,4,3
+inference the use of different database models in real-world applications,4,3
+organize the different phases of database design,4,3
+simplify the process of database normalization,4,3
+test for the consistency of a database,4,3
+identify the key components of a dbms,4,3
+investigate the different types of indexing techniques,4,3
+assess the performance of different database models,5,3
+choose the best database model for a given scenario,5,3
+compare the performance of various indexing techniques,5,3
+decide on the most appropriate normalization form for a database,5,3
+determine the efficiency of a given sql query,5,3
+estimate the storage requirements for a database,5,3
+evaluate the effectiveness of different database management techniques,5,3
+explain the trade-offs between sql and nosql databases,5,3
+interpret the results of a database performance analysis,5,3
+justify the use of a particular indexing technique,5,3
+measure the performance of different databases,5,3
+prioritize the tasks in a database design project,5,3
+prove the correctness of a database transaction,5,3
+rate the usability of different database models,5,3
+recommend an optimization strategy for a database,5,3
+build a custom database management system,6,3
+compose an sql query to solve a complex problem,6,3
+construct a new database schema,6,3
+create a new indexing technique,6,3
+design a nosql database for a social media platform,6,3
+develop a database application,6,3
+discuss the design of a distributed database,6,3
+elaborate on the implementation of a database management system,6,3
+estimate the effort required to complete a database project,6,3
+formulate a new algorithm for database indexing,6,3
+improve the performance of an existing database,6,3
+maximize the efficiency of a database management technique,6,3
+modify an existing database to improve performance,6,3
+predict the outcome of a change in a database schema,6,3
+invent a new database model,6,3
+define the concept of computer networks,1,4
+describe the functions of different network layers,1,4
+find the role of a router in a network,1,4
+"how does tcp/ip work?,",1,4
+list the types of network topologies,1,4
+name the osi model layers,1,4
+"what is an ip address?,",1,4
+"where is dhcp used?,",1,4
+which network topology is most widely used?,1,4
+why is network security important?,1,4
+draw a network topology diagram,1,4
+write a program to configure a network interface,1,4
+compare different network protocols,2,4
+demonstrate the use of a router,2,4
+discuss the advantages of using a mesh network,2,4
+distinguish between tcp and udp,2,4
+explain the concept of network addressing,2,4
+illustrate the use of ip addressing,2,4
+outline the steps of data encapsulation,2,4
+show how to configure a dhcp server,2,4
+summarize the benefits of network segmentation,2,4
+compute the subnet mask for a given ip address,3,4
+develop a network configuration for an office,3,4
+analyze the performance of different network topologies,3,4
+identify the key features of a wireless network,3,4
+make use of network simulation tools,3,4
+select an appropriate network protocol for a given scenario,3,4
+solve the problem of network congestion,3,4
+utilize nat to configure a network,3,4
+draw the network layout for a small business,3,4
+illustrate the concept of network virtualization,3,4
+classify different types of network topologies,4,4
+characterize the features of a wireless network,4,4
+categorize different network protocols,4,4
+compare the features of different network layers,4,4
+derive the throughput of a network,4,4
+distinguish between ipv4 and ipv6,4,4
+examine the principles of network security,4,4
+inference the use of different network topologies in real-world applications,4,4
+organize the different components of a network,4,4
+simplify the process of network configuration,4,4
+test for the reliability of a network,4,4
+identify the key components of a network,4,4
+investigate the different types of network security threats,4,4
+assess the performance of different network protocols,5,4
+choose the best network topology for a given scenario,5,4
+compare the performance of various network configurations,5,4
+decide on the most appropriate network protocol for a project,5,4
+determine the efficiency of a given network protocol,5,4
+estimate the bandwidth requirements for a network,5,4
+evaluate the effectiveness of different network security measures,5,4
+explain the trade-offs between wired and wireless networks,5,4
+interpret the results of a network performance analysis,5,4
+justify the use of a particular network protocol,5,4
+measure the performance of different network layers,5,4
+prioritize the tasks in a network design project,5,4
+prove the reliability of a network protocol,5,4
+rate the usability of different network topologies,5,4
+recommend an optimization strategy for a network,5,4
+build a custom network protocol,6,4
+compose a program to simulate a network,6,4
+construct a new network topology,6,4
+create a new network security measure,6,4
+design a wireless network for a campus,6,4
+develop a network monitoring tool,6,4
+discuss the design of a network infrastructure,6,4
+elaborate on the implementation of a network protocol,6,4
+estimate the effort required to complete a network project,6,4
+formulate a new algorithm for network routing,6,4
+improve the performance of an existing network,6,4
+maximize the efficiency of a network configuration,6,4
+modify an existing network to improve performance,6,4
+predict the outcome of a change in a network topology,6,4
+invent a new network protocol,6,4
+Define the concept of machine learning,1,5
+Describe the functions of a neural network,1,5
+Find the role of a loss function in machine learning,1,5
+"How does a support vector machine work?,",1,5
+List the types of machine learning algorithms,1,5
+Name the different layers in a neural network,1,5
+"What is overfitting?,",1,5
+"Where is supervised learning used?,",1,5
+"Which machine learning model is the best for classification?,",1,5
+"Why is data preprocessing important?,",1,5
+Draw a decision tree,1,5
+Write a program to implement linear regression,1,5
+Compare different machine learning algorithms,2,5
+Demonstrate the concept of overfitting,2,5
+Discuss the advantages of deep learning,2,5
+Distinguish between supervised and unsupervised learning,2,5
+Explain the concept of a confusion matrix,2,5
+Illustrate the working of a k-means clustering algorithm,2,5
+Outline the steps of training a machine learning model,2,5
+Show how to use a confusion matrix,2,5
+Summarize the process of cross-validation,2,5
+Compute the accuracy of a machine learning model,3,5
+Develop a neural network model,3,5
+Analyze the performance of different machine learning models,3,5
+Identify the key features of a support vector machine,3,5
+Make use of gradient descent to optimize a model,3,5
+Select an appropriate machine learning algorithm for a given dataset,3,5
+Solve the problem of classification using machine learning,3,5
+Utilize data augmentation to improve model performance,3,5
+Draw the structure of a convolutional neural network,3,5
+Illustrate the concept of reinforcement learning,3,5
+Classify different types of machine learning algorithms,4,5
+Characterize the properties of a neural network,4,5
+Categorize different types of learning algorithms,4,5
+Compare the features of supervised and unsupervised learning,4,5
+Derive the formula for a loss function,4,5
+Distinguish between a model's bias and variance,4,5
+Examine the principles of feature engineering,4,5
+Inference the use of different algorithms in real-world applications,4,5
+Organize the different phases of model training,4,5
+Simplify the process of hyperparameter tuning,4,5
+Test for the presence of overfitting in a model,4,5
+Identify the key components of a machine learning pipeline,4,5
+Investigate the different types of neural networks,4,5
+Assess the performance of different machine learning models,5,5
+Choose the best algorithm for a given problem,5,5
+Compare the performance of various models,5,5
+Decide on the most appropriate model evaluation metric,5,5
+Determine the efficiency of a given model,5,5
+Estimate the computational cost of training a model,5,5
+Evaluate the effectiveness of different learning techniques,5,5
+Explain the trade-offs between different models,5,5
+Interpret the results of a model evaluation,5,5
+Justify the use of a particular algorithm,5,5
+Measure the performance of different models,5,5
+Prioritize the tasks in a machine learning project,5,5
+Prove the correctness of a model,5,5
+Rate the usability of different algorithms,5,5
+Recommend an optimization strategy for a model,5,5
+Build a custom neural network,6,5
+Compose a program to implement a deep learning model,6,5
+Construct a new machine learning algorithm,6,5
+Create a new feature extraction method,6,5
+Design a machine learning pipeline,6,5
+Develop a reinforcement learning model,6,5
+Discuss the design of a new learning algorithm,6,5
+Elaborate on the implementation of a neural network,6,5
+Estimate the effort required to complete a machine learning project,6,5
+Formulate a new optimization algorithm,6,5
+Improve the performance of an existing model,6,5
+Maximize the efficiency of a learning technique,6,5
+Modify an existing algorithm to improve accuracy,6,5
+Predict the outcome of a model change,6,5
+Invent a new machine learning technique,6,5
+Define the concept of artificial intelligence,1,6
+Describe the functions of an expert system,1,6
+Find the role of heuristics in AI,1,6
+"How does a neural network function?,",1,6
+List the types of AI systems,1,6
+Name the different branches of AI,1,6
+"What is a Turing test?,",1,6
+"Where is natural language processing used?,",1,6
+"Which AI technique is used for image recognition?,",1,6
+"Why is AI important?,",1,6
+Draw a state diagram for an AI agent,1,6
+Write a program to implement a chatbot,1,6
+Compare different AI techniques,2,6
+Demonstrate the concept of machine learning in AI,2,6
+Discuss the advantages of AI in healthcare,2,6
+Distinguish between strong AI and weak AI,2,6
+Explain the concept of fuzzy logic,2,6
+Illustrate the working of a genetic algorithm,2,6
+Outline the steps of developing an AI system,2,6
+Show how to implement a decision tree,2,6
+Summarize the process of natural language processing,2,6
+Compute the accuracy of an AI model,3,6
+Develop an AI-based recommendation system,3,6
+Analyze the performance of different AI models,3,6
+Identify the key features of an expert system,3,6
+Make use of AI for predictive analysis,3,6
+Select an appropriate AI technique for a given problem,3,6
+Solve the problem of speech recognition using AI,3,6
+Utilize machine learning for AI applications,3,6
+Draw the structure of an AI-based system,3,6
+Illustrate the concept of reinforcement learning in AI,3,6
+Classify different types of AI techniques,4,6
+Characterize the properties of an expert system,4,6
+Categorize different branches of AI,4,6
+Compare the features of machine learning and deep learning,4,6
+Derive the formula for an AI heuristic function,4,6
+Distinguish between supervised and unsupervised learning in AI,4,6
+Examine the principles of AI ethics,4,6
+Inference the use of different AI techniques in real-world applications,4,6
+Organize the different phases of AI system development,4,6
+Simplify the process of AI model training,4,6
+Test for the presence of bias in an AI model,4,6
+Identify the key components of an AI system,4,6
+Investigate the different types of neural networks used in AI,4,6
+Assess the performance of different AI models,5,6
+Choose the best AI technique for a given problem,5,6
+Compare the performance of various AI systems,5,6
+Decide on the most appropriate AI evaluation metric,5,6
+Determine the efficiency of a given AI system,5,6
+Estimate the computational cost of developing an AI model,5,6
+Evaluate the effectiveness of different AI techniques,5,6
+Explain the trade-offs between different AI models,5,6
+Interpret the results of an AI model evaluation,5,6
+Justify the use of a particular AI technique,5,6
+Measure the performance of different AI systems,5,6
+Prioritize the tasks in an AI development project,5,6
+Prove the correctness of an AI algorithm,5,6
+Rate the usability of different AI techniques,5,6
+Recommend an optimization strategy for an AI system,5,6
+Build a custom AI model,6,6
+Compose a program to implement a genetic algorithm,6,6
+Construct a new AI heuristic,6,6
+Create a new natural language processing technique,6,6
+Design an AI-based expert system,6,6
+Develop a reinforcement learning algorithm,6,6
+Discuss the design of a new AI technique,6,6
+Elaborate on the implementation of a neural network in AI,6,6
+Estimate the effort required to complete an AI project,6,6
+Formulate a new algorithm for AI-based image recognition,6,6
+Improve the performance of an existing AI model,6,6
+Maximize the efficiency of an AI technique,6,6
+Modify an existing AI algorithm to improve performance,6,6
+Predict the outcome of an AI model change,6,6
+Invent a new AI technique,6,6
+Define the concept of blockchain,1,7
+Describe the components of a blockchain network,1,7
+Find the role of cryptographic hashing in blockchain,1,7
+"How does a smart contract work?,",1,7
+List the types of blockchain consensus mechanisms,1,7
+Name the different blockchain platforms,1,7
+"What is a distributed ledger?,",1,7
+"Where is blockchain technology used?,",1,7
+"Which consensus mechanism is most energy efficient?,",1,7
+"Why is blockchain secure?,",1,7
+Draw the architecture of a blockchain network,1,7
+Write a smart contract in Solidity,1,7
+Compare different blockchain platforms,2,7
+Demonstrate the concept of decentralization in blockchain,2,7
+Discuss the advantages of blockchain in supply chain management,2,7
+Distinguish between public and private blockchains,2,7
+Explain the concept of a blockchain fork,2,7
+Illustrate the working of proof-of-stake consensus,2,7
+Outline the steps of executing a smart contract,2,7
+Show how to implement a blockchain node,2,7
+Summarize the process of mining in blockchain,2,7
+Compute the transaction fee in a blockchain network,3,7
+Develop a decentralized application (DApp),3,7
+Analyze the performance of different consensus mechanisms,3,7
+Identify the key features of a smart contract,3,7
+Make use of blockchain for secure transactions,3,7
+Select an appropriate blockchain platform for a given use case,3,7
+Solve the problem of double spending using blockchain,3,7
+Utilize cryptographic techniques in blockchain,3,7
+Draw the structure of a blockchain transaction,3,7
+Illustrate the concept of a decentralized autonomous organization (DAO),3,7
+Classify different types of blockchain networks,4,7
+Characterize the properties of a public blockchain,4,7
+Categorize different blockchain consensus mechanisms,4,7
+Compare the features of proof-of-work and proof-of-stake,4,7
+Derive the formula for calculating blockchain hash rate,4,7
+Distinguish between blockchain and traditional databases,4,7
+Examine the principles of blockchain governance,4,7
+Inference the use of blockchain in different industries,4,7
+Organize the different phases of a blockchain project,4,7
+Simplify the process of deploying a smart contract,4,7
+Test for vulnerabilities in a blockchain network,4,7
+Identify the key components of a blockchain architecture,4,7
+Investigate the different types of blockchain consensus algorithms,4,7
+Assess the security features of different blockchain platforms,5,7
+Choose the best blockchain platform for a specific application,5,7
+Compare the scalability of various blockchain networks,5,7
+Decide on the most appropriate consensus mechanism for a network,5,7
+Determine the efficiency of a blockchain network,5,7
+Estimate the computational resources required for mining,5,7
+Evaluate the effectiveness of different blockchain applications,5,7
+Explain the trade-offs between different blockchain technologies,5,7
+Interpret the results of a blockchain network analysis,5,7
+Justify the use of blockchain for a particular use case,5,7
+Measure the performance of different blockchain consensus mechanisms,5,7
+Prioritize the tasks in a blockchain development project,5,7
+Prove the security of a blockchain network,5,7
+Rate the usability of different blockchain platforms,5,7
+Recommend a blockchain platform for a specific problem,5,7
+Build a custom blockchain application,6,7
+Compose a program to implement a new consensus algorithm,6,7
+Construct a new blockchain network,6,7
+Create a new smart contract language,6,7
+Design a blockchain-based supply chain solution,6,7
+Develop a new blockchain consensus mechanism,6,7
+Discuss the design of a decentralized application,6,7
+Elaborate on the implementation of a blockchain protocol,6,7
+Estimate the effort required to complete a blockchain project,6,7
+Formulate a new algorithm for blockchain security,6,7
+Improve the scalability of an existing blockchain network,6,7
+Maximize the efficiency of a blockchain application,6,7
+Modify an existing blockchain protocol to enhance security,6,7
+Predict the outcome of a change in blockchain consensus,6,7
+Invent a new blockchain technology,6,7
+Define the concept of quantum computing,1,8
+Describe the functions of a qubit,1,8
+Find the role of superposition in quantum computing,1,8
+"How does quantum entanglement work?,",1,8
+List the types of quantum gates,1,8
+Name the different quantum computing models,1,8
+"What is quantum decoherence?,",1,8
+"Where is quantum computing used?,",1,8
+"Which quantum algorithm is used for factoring?,",1,8
+"Why is quantum computing powerful?,",1,8
+Draw the architecture of a quantum computer,1,8
+Write a program to implement a quantum algorithm,1,8
+Compare different quantum computing models,2,8
+Demonstrate the concept of superposition,2,8
+Discuss the advantages of quantum computing in cryptography,2,8
+Distinguish between classical and quantum computing,2,8
+Explain the concept of quantum teleportation,2,8
+Illustrate the working of a quantum gate,2,8
+Outline the steps of executing a quantum algorithm,2,8
+Show how to implement a quantum circuit,2,8
+Summarize the process of quantum error correction,2,8
+Compute the probability amplitude of a quantum state,3,8
+Develop a quantum algorithm for search problems,3,8
+Analyze the performance of different quantum algorithms,3,8
+Identify the key features of a quantum computer,3,8
+Make use of quantum entanglement for communication,3,8
+Select an appropriate quantum algorithm for a given problem,3,8
+Solve the problem of factoring using Shor's algorithm,3,8
+Utilize quantum superposition in algorithms,3,8
+Draw the structure of a quantum circuit,3,8
+Illustrate the concept of quantum parallelism,3,8
+Classify different types of quantum gates,4,8
+Characterize the properties of a qubit,4,8
+Categorize different quantum computing models,4,8
+Compare the features of quantum and classical algorithms,4,8
+Derive the formula for a quantum gate operation,4,8
+Distinguish between quantum entanglement and classical correlation,4,8
+Examine the principles of quantum error correction,4,8
+Inference the use of quantum algorithms in different applications,4,8
+Organize the different phases of a quantum computing project,4,8
+Simplify the process of quantum algorithm design,4,8
+Test for quantum entanglement in a system,4,8
+Identify the key components of a quantum computing architecture,4,8
+Investigate the different types of quantum algorithms,4,8
+Assess the computational power of different quantum computers,5,8
+Choose the best quantum algorithm for a specific application,5,8
+Compare the scalability of various quantum computing models,5,8
+Decide on the most appropriate quantum gate for a circuit,5,8
+Determine the efficiency of a quantum algorithm,5,8
+Estimate the resources required for quantum computation,5,8
+Evaluate the effectiveness of different quantum error correction techniques,5,8
+Explain the trade-offs between different quantum computing models,5,8
+Interpret the results of a quantum computation,5,8
+Justify the use of quantum computing for a particular problem,5,8
+Measure the performance of different quantum algorithms,5,8
+Prioritize the tasks in a quantum computing research project,5,8
+Prove the correctness of a quantum algorithm,5,8
+Rate the usability of different quantum computing platforms,5,8
+Recommend a quantum computing model for a specific problem,5,8
+Build a custom quantum algorithm,6,8
+Compose a program to implement a quantum entanglement experiment,6,8
+Construct a new quantum computing model,6,8
+Create a new quantum error correction technique,6,8
+Design a quantum-based cryptographic protocol,6,8
+Develop a new quantum algorithm for optimization problems,6,8
+Discuss the design of a quantum computing system,6,8
+Elaborate on the implementation of a quantum gate,6,8
+Estimate the effort required to complete a quantum computing project,6,8
+Formulate a new quantum algorithm for data analysis,6,8
+Improve the efficiency of an existing quantum algorithm,6,8
+Maximize the computational power of a quantum system,6,8
+Modify an existing quantum circuit to enhance performance,6,8
+Predict the outcome of a quantum computation,6,8
+Invent a new quantum computing technique,6,8
