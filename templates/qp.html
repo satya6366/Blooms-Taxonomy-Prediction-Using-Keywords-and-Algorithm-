@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Paper Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .contain {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left {
+            flex: 1;
+        }
+
+        .middle-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .middle-right h4 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/qpanalyze" method="post">
+            <div class="header">
+                <div class="header-left">
+                    <img src="{{ url_for('static', filename='img/logodsce.jpg') }}" alt="dsce Logo" class="logo">
+                </div>
+                <div class="header-center">
+                    <h1>DAYANANDA SAGAR COLLEGE OF ENGINEERING</h1>
+                    <p style="font-size: 10pt;">[An Autonomous Institution Affiliated to VTU, Belagavi, Accredited by NBA (CSE, ECE, EEE, ISE, ME) and NAAC with 'A' Grade]</p>
+                    <center><p>Shavige Malleshwara Hills, Kumaraswamy Layout, Bengaluru-560111</p></center>
+                    <center><textarea name="header1" rows="1" cols="50"></textarea></center><br>
+                    <center><textarea name="header2" rows="1" cols="60"></textarea></center>
+                </div>
+            </div><br>
+
+            <div class="contain">
+                <div class="left">
+                    <h4>Course: <textarea name="course" rows="1" cols="30"></textarea></h4>
+                    <h4>Course Code: <textarea name="course_code" rows="1" cols="30"></textarea></h4>
+                    <h4>Semester: <textarea name="semester" rows="1" cols="10"></textarea></h4>
+                </div>
+                <div class="middle-right">
+                    <h4>Maximum Marks: <textarea name="max_marks" rows="1" cols="20"></textarea></h4>
+                    <h4>Date: <textarea name="date" rows="1" cols="30"></textarea></h4>
+                    <h4>Duration: <textarea name="duration" rows="1" cols="30"></textarea></h4>
+                </div>
+            </div>
+
+            <table class="details-table">
+                <tr>
+                    <th>Question No.</th>
+                    <th>1 a</th>
+                    <th>1 b</th>
+                    <th>2 a</th>
+                    <th>2 b</th>
+                    <th>3 a</th>
+                    <th>3 b</th>
+                    <th>4 a</th>
+                    <th>4 b</th>
+                    <th>5 a</th>
+                    <th>5 b</th>
+                    <th>6 a</th>
+                    <th>6 b</th>
+                    <th>7 a</th>
+                    <th>7 b</th>
+                    <th>8 a</th>
+                    <th>8 b</th>
+                </tr>
+                <tr>
+                    <td>Course Outcome</td>
+                    <td><input type="text" name="co_1a"></td>
+                    <td><input type="text" name="co_1b"></td>
+                    <td><input type="text" name="co_2a"></td>
+                    <td><input type="text" name="co_2b"></td>
+                    <td><input type="text" name="co_3a"></td>
+                    <td><input type="text" name="co_3b"></td>
+                    <td><input type="text" name="co_4a"></td>
+                    <td><input type="text" name="co_4b"></td>
+                    <td><input type="text" name="co_5a"></td>
+                    <td><input type="text" name="co_5b"></td>
+                    <td><input type="text" name="co_6a"></td>
+                    <td><input type="text" name="co_6b"></td>
+                    <td><input type="text" name="co_7a"></td>
+                    <td><input type="text" name="co_7b"></td>
+                    <td><input type="text" name="co_8a"></td>
+                    <td><input type="text" name="co_8b"></td>
+                </tr>
+                <tr>
+                    <td>Program Outcome</td>
+                    <td><input type="text" name="po_1a"></td>
+                    <td><input type="text" name="po_1b"></td>
+                    <td><input type="text" name="po_2a"></td>
+                    <td><input type="text" name="po_2b"></td>
+                    <td><input type="text" name="po_3a"></td>
+                    <td><input type="text" name="po_3b"></td>
+                    <td><input type="text" name="po_4a"></td>
+                    <td><input type="text" name="po_4b"></td>
+                    <td><input type="text" name="po_5a"></td>
+                    <td><input type="text" name="po_5b"></td>
+                    <td><input type="text" name="po_6a"></td>
+                    <td><input type="text" name="po_6b"></td>
+                    <td><input type="text" name="po_7a"></td>
+                    <td><input type="text" name="po_7b"></td>
+                    <td><input type="text" name="po_8a"></td>
+                    <td><input type="text" name="po_8b"></td>
+                </tr>
+                <tr>
+                    <td>Blooms Level</td>
+                    <td><p>{{ level1a }}</p></td>
+                    <td><p>{{ level1b }}</p></td>
+                    <td><p>{{ level2a }}</p></td>
+                    <td><p>{{ level2b }}</p></td>
+                    <td><p>{{ level3a }}</p></td>
+                    <td><p>{{ level3b }}</p></td>
+                    <td><p>{{ level4a }}</p></td>
+                    <td><p>{{ level4b }}</p></td>
+                    <td><p>{{ level5a }}</p></td>
+                    <td><p>{{ level5b }}</p></td>
+                    <td><p>{{ level6a }}</p></td>
+                    <td><p>{{ level6b }}</p></td>
+                    <td><p>{{ level7a }}</p></td>
+                    <td><p>{{ level7b }}</p></td>
+                    <td><p>{{ level8a }}</p></td>
+                    <td><p>{{ level8b }}</p></td>
+                </tr>
+            </table>
+
+            <table class="questions-table">
+                {% for i in range(1, 9) %}
+                    <tr>
+                        <th>Question {{ i }} for 10 Marks</th>
+                        <th>Marks</th>
+                    </tr>
+                    <tr>
+                        <td><b>{{ i }}a) <textarea name="question{{ i }}a" rows="3" cols="130"></textarea></b></td>
+                        <td rowspan="2"><textarea name="marks{{ i }}" rows="2" cols="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>{{ i }}b) <textarea name="question{{ i }}b" rows="3" cols="130"></textarea></b></td>
+                    </tr>
+                    {% if i < 8 %}
+                        <tr>
+                            <td class="or" colspan="2">(OR)</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+<style>
+    .submit-button {
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    color: white;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                }
+</style>
+            <div class="submit-button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

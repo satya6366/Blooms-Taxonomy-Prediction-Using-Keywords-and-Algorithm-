@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Paper Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-left {
+            flex: 1;
+        }
+        .header-center {
+            flex: 2;
+            text-align: center;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+        .contain {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .left, .middle-right {
+            flex: 1;
+        }
+        .middle-right {
+            display: flex;
+            flex-direction: column;
+        }
+        .middle-right h4 {
+            margin: 10px 0;
+        }
+        .details-table, .questions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .details-table th, .details-table td, .questions-table th, .questions-table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .questions-table textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .or {
+            text-align: center;
+            font-weight: bold;
+        }
+        textarea[readonly] {
+            background-color: transparent;
+            border: none;
+            resize: none;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <img src="{{ url_for('static', filename='img/logodsce.jpg') }}" alt="dsce Logo" class="logo">
+            </div>
+            <div class="header-center">
+                <h1>DAYANANDA SAGAR COLLEGE OF ENGINEERING</h1>
+                <p style="font-size: 10pt;">[An Autonomous Institution Affiliated to VTU, Belagavi, Accredited by NBA (CSE, ECE, EEE, ISE, ME) and NAAC with 'A' Grade]</p>
+                <p>Shavige Malleshwara Hills, Kumaraswamy Layout, Bengaluru-560111</p>
+                <p><textarea name="header1" rows="1" cols="50" readonly>{{ data.header1 }}</textarea></p>
+                <p><textarea name="header2" rows="1" cols="60" readonly>{{ data.header2 }}</textarea></p>
+            </div>
+        </div><br>
+
+        <div class="contain">
+            <div class="left">
+                <h4>Course: <textarea readonly rows="1" cols="30">{{ data.course }}</textarea></h4>
+                <h4>Course Code: <textarea readonly rows="1" cols="30">{{ data.course_code }}</textarea></h4>
+                <h4>Semester: <textarea readonly rows="1" cols="10">{{ data.semester }}</textarea></h4>
+            </div>
+            <div class="middle-right">
+                <h4>Maximum Marks: <textarea readonly rows="1" cols="20">{{ data.max_marks }}</textarea></h4>
+                <h4>Date: <textarea readonly rows="1" cols="30">{{ data.date }}</textarea></h4>
+                <h4>Duration: <textarea readonly rows="1" cols="30">{{ data.duration }}</textarea></h4>
+            </div>
+        </div>
+
+        <table class="details-table">
+            <tr>
+                <th>Question No.</th>
+                {% for i in range(1, 9) %}
+                    <th>{{ i }} a</th>
+                    <th>{{ i }} b</th>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>Course Outcome</td>
+                {% for i in range(1, 9) %}
+                    <td><input type="text" name="co_{{i}}a" value="{{ data['co_' ~ i ~ 'a'] }}" readonly></td>
+                    <td><input type="text" name="co_{{i}}b" value="{{ data['co_' ~ i ~ 'b'] }}" readonly></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>Program Outcome</td>
+                {% for i in range(1, 9) %}
+                    <td><input type="text" name="po_{{i}}a" value="{{ data['po_' ~ i ~ 'a'] }}" readonly></td>
+                    <td><input type="text" name="po_{{i}}b" value="{{ data['po_' ~ i ~ 'b'] }}" readonly></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>Blooms Level</td>
+                {% for i in range(1, 9) %}
+                    <td><p>{{ data['level' ~ i ~ 'a'] }}</p></td>
+                    <td><p>{{ data['level' ~ i ~ 'b'] }}</p></td>
+                {% endfor %}
+            </tr>
+        </table>
+
+        <table class="questions-table">
+            {% for i in range(1, 9) %}
+                <tr>
+                    <th>Question {{ i }} for 10 Marks</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td><b>{{ i }}a) <textarea name="question{{ i }}a" rows="3" cols="130" readonly>{{ data['question' ~ i ~ 'a'] }}</textarea></b></td>
+                    <td rowspan="2"><textarea name="marks{{ i }}" rows="2" cols="5" readonly>{{ data['marks' ~ i] }}</textarea></td>
+                </tr>
+                <tr>
+                    <td><b>{{ i }}b) <textarea name="question{{ i }}b" rows="3" cols="130" readonly>{{ data['question' ~ i ~ 'b'] }}</textarea></b></td>
+                </tr>
+                {% if i < 8 %}
+                    <tr>
+                        <td class="or" colspan="2">(OR)</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </table>
+
+        <form action="/download" method="post">
+            <input type="hidden" name="course" value="{{ data.course }}">
+            <input type="hidden" name="course_code" value="{{ data.course_code }}">
+            <input type="hidden" name="semester" value="{{ data.semester }}">
+            <input type="hidden" name="max_marks" value="{{ data.max_marks }}">
+            <input type="hidden" name="date" value="{{ data.date }}">
+            <input type="hidden" name="duration" value="{{ data.duration }}">
+            {% for key, value in data.items() %}
+                {% if key.startswith('co_') or key.startswith('po_') or key.startswith('question') or key.startswith('marks') or key.startswith('level') %}
+                    <input type="hidden" name="{{ key }}" value="{{ value }}">
+                {% endif %}
+            {% endfor %}
+            <select name="file_type">
+                <option value="pdf">PDF</option>
+                <option value="word">Word</option>
+            </select>
+            <button type="submit" class="times-new-roman">Download</button>
+        </form>
+    </div>
+</body>
+</html>

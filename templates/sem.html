@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis of Blooms Level Semester Wise</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        h1 {
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+        form {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #f1f8e9;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            margin: 10px 0 5px;
+            color: #00796b;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #cfd8dc;
+            border-radius: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            padding: 15px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #00796b;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+
+        
+        .back-button:hover {
+            background-color: #607d8b;
+        }
+        p {
+            background-color: #e0f2f1;
+            padding: 15px;
+            border-radius: 10px;
+            color: #004d40;
+            font-size: 18px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .qp {
+                    position: absolute;
+                    top: 60px; /* Adjust as necessary */
+                    right: 60px; /* Adjust as necessary */
+                }
+        
+                .qp .clickMe {
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    background-color: #007bff;
+                    color: white;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                }
+        
+                .qp .clickMe:hover {
+                    background-color: #0056b3;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="qp">
+                <a class="clickMe" href="{{ url_for('qp') }} ">Question Paper</a>
+                <a class="clickMe" href="{{ url_for('index') }} ">Home</a>
+
+            </div>
+            <h1>Analysis of Blooms Level Semester Wise</h1>
+            {% if bloom_level %}
+                <p>{{ bloom_level }}</p>
+            {% endif %}
+        </div>
+        <form method="POST" action="/analyze_sem">
+            <label for="semester">Semester:</label>
+            <input type="number" id="semester" name="semester" min="1" max="8" required>
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+            <button type="submit">Analyze</button>
+        </form>
+    </div>
+
+</body>
+</html>
